@@ -1,8 +1,8 @@
 function main (){
     const gruppo = ["aldo","bea","carlo","daria","ennio","flavia"]; //array di default di riferimento
     let pool = gruppo.map(x=>x); //array dal quale levare il babbo ad ogni sorteggio (per poi reinserirlo) e anche chi è gia stato sorteggiato
-    let senzaBabbo = gruppo.map(x=>x);
-    let statusBab = gruppo.map(x=>x);
+    let senzaBabbo = gruppo.map(x=>x); //array temporaneo per sorteggio senza l'utente connesso
+    let statusBab = gruppo.map(x=>x); //per debugging
     let target = ''; //il sorteggiato a caso dall'array pool escludendo il babbo natale connesso
     let rndArr=[]; //per debugging
     let j=0; //contatore iterazioni in caso di errori
